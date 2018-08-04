@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".busSeats45" />
+        <activity android:name=".confirmation" />
+        <activity android:name=".paymentMethod"></activity>
     </application>
 
 </manifest>

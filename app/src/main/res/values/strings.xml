@@ -6,4 +6,34 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="agency_prompt">Choose an Agency</string>
+
+    <string-array name="agency_arrays">
+        <item>Agency 1</item>
+        <item>Agency 2</item>
+        <item>Agency 3</item>
+        <item>Agency 4</item>
+        <item>Agency 5</item>
+        <item>Agency 6</item>
+        <item>Agency 7</item>
+        <item>Agency 8</item>
+    </string-array>
+
+    <string name="cityFrom_prompt">From</string>
+
+    <string-array name="city_array">
+        <item>Khartoum</item>
+        <item>Omdurman</item>
+        <item>Bahri</item>
+        <item>Kasala</item>
+    </string-array>
+
+    <string name="cityTo_prompt">To</string>
+
+    <string-array name="city_array2">
+        <item>Port Sudan</item>
+        <item>Sinja</item>
+        <item>Kasala</item>
+        <item>Atbra</item>
+    </string-array>
 </resources>
