@@ -35,6 +35,7 @@
         android:dropDownWidth="match_parent"
         android:entries="@array/agency_arrays"
         android:gravity="center_horizontal"
+        android:background="@drawable/border"
         android:prompt="@string/agency_prompt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -101,7 +102,7 @@
                 android:id="@+id/Datepick"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
+                android:background="@drawable/border"
                 android:layout_below="@+id/set"
                 android:foregroundGravity="center"
                 android:headerBackground="@color/colorPrimary"
