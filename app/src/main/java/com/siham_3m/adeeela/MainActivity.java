@@ -39,24 +39,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-//        final DatePicker datePicker = (DatePicker) findViewById(R.id.Datepick);
-//        final Button button = (Button) findViewById(R.id.set);
-//
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(MainActivity.this, datePicker.getDayOfMonth()+""+datePicker.getMonth()+""+datePicker.getYear(),Toast.LENGTH_LONG).show();
-//            }
-//        });
-
     }
 
-    public void buSet(View view) {
+    public void buSeat45(View view) {
         Intent intent = new Intent(this, busSeats45.class);
         startActivity(intent);
     }
-
+     public void buSeat49 (View view) {
+        Intent intent = new Intent(this, bus_seat49.class);
+        startActivity(intent);
+     }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

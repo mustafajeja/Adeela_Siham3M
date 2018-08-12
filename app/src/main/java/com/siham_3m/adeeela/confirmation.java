@@ -13,7 +13,7 @@ public class confirmation extends AppCompatActivity {
         setContentView(R.layout.activity_confirmation);
     }
 
-    public void buPy(View view){
+    public void buBook(View view){
         Intent intent = new Intent(this, paymentMethod.class);
         startActivity(intent);
     }

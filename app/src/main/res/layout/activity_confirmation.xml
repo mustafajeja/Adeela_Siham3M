@@ -1,257 +1,555 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:visibility="visible"
     tools:context=".confirmation">
 
-    <TableRow
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="151dp"
+        <View
+            android:id="@+id/divider"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/black"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toEndOf="@+id/divider8"
+            app:layout_constraintStart_toStartOf="@+id/divider8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="Passenger Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recDetTotal" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:gravity="center_horizontal"
-            android:text="Details"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:gravity="center_horizontal"
-            android:text="Value"
-            android:textStyle="bold" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Passenger Phone"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView"
+            app:layout_constraintVertical_bias="0.218" />
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Details"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.196" />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.093" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.29" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.39" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.912" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.81" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.707" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.605" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/autoCompleteTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
+            android:id="@+id/recFrom"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="From"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="151dp"
-            android:background="@drawable/border"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal" />
+            android:id="@+id/recTo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="To"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recFrom" />
 
         <TextView
-            android:id="@+id/textView12"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
+            android:id="@+id/recTime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="Time"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recTo" />
 
         <TextView
-            android:id="@+id/textView14"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
+            android:id="@+id/recAgency"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="Agency"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recTime" />
 
         <TextView
-            android:id="@+id/textView16"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
+            android:id="@+id/recBus"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="Bus"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recAgency" />
 
         <TextView
-            android:id="@+id/textView18"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
+            android:id="@+id/recBusNo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="Bus No."
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recBus" />
 
         <TextView
-            android:id="@+id/textView20"
-            android:layout_width="196dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:background="@drawable/border" />
-    </TableRow>
+            android:id="@+id/recSeatPrice"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="Seat Price"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recBusNo" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/recSeatNo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="Seat No."
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recSeatPrice" />
 
-        <EditText
-            android:id="@+id/passName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:ems="10"
-            android:hint="Passenger Name"
-            android:inputType="textPersonName"
-            android:text="Name" />
+        <TextView
+            android:id="@+id/recTotal"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="Total"
+            app:layout_constraintBottom_toTopOf="@+id/autoCompleteTextView"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recSeatNo"
+            app:layout_constraintVertical_bias="0.0" />
 
-    </TableRow>
+        <TextView
+            android:id="@+id/recDetTo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/recDetFrom" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/recDetTime" />
 
-        <EditText
-            android:id="@+id/passPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:background="@drawable/border"
-            android:hint="Phone Number"
-            android:inputType="phone" />
-    </TableRow>
+        <TextView
+            android:id="@+id/recDetTime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/recDetTo" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/recDetBus"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/recDetSeatPrice"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/recDetBusNo" />
+
+        <TextView
+            android:id="@+id/recDetSeatNo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/recDetSeatPrice" />
+
+        <TextView
+            android:id="@+id/recDetTotal"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/recDetSeatNo" />
+
+        <TextView
+            android:id="@+id/recDetBusNo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/recDetBus" />
+
+        <TextView
+            android:id="@+id/recDetFrom"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
             android:background="@color/colorPrimary"
-            android:onClick="buPy"
-            android:text="Button"
-            android:textColor="#fff" />
-    </TableRow>
-</TableLayout>
+            android:onClick="buBook"
+            android:text="Book"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

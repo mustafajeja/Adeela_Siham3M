@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
@@ -14,9 +13,9 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
             app:title="Choose Seat"
-            app:titleTextColor="#ffffff" />
+            app:titleTextColor="#ffffff"
+            android:layout_height="?attr/actionBarSize" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -27,7 +26,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             tools:context=".busSeats45">
 
             <android.support.v4.widget.NestedScrollView
@@ -36,7 +35,7 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:overScrollMode="always"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="264dp">
@@ -585,30 +584,27 @@
                         android:id="@+id/seat41"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginBottom="8dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginStart="35dp"
                         android:layout_marginTop="10dp"
                         android:background="@color/colorPrimary"
                         android:text="41"
                         android:textColor="@android:color/white"
-                        app:layout_constraintBottom_toTopOf="@+id/button4"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/seat37"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintTop_toBottomOf="@+id/seat37" />
 
                     <Button
                         android:id="@+id/seat42"
                         android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="10dp"
                         android:background="@color/colorPrimary"
                         android:text="42"
                         android:textColor="@android:color/white"
-                        app:layout_constraintBottom_toTopOf="@+id/button4"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/seat41"
                         app:layout_constraintTop_toBottomOf="@+id/seat38"
                         app:layout_constraintVertical_bias="0.0" />
@@ -617,49 +613,101 @@
                         android:id="@+id/seat43"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginBottom="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
                         android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
                         android:background="@color/colorPrimary"
                         android:text="43"
                         android:textColor="@android:color/white"
-                        app:layout_constraintBottom_toTopOf="@+id/button4"
                         app:layout_constraintEnd_toStartOf="@+id/seat44"
-                        app:layout_constraintStart_toEndOf="@+id/seat42" />
+                        app:layout_constraintTop_toBottomOf="@+id/seat39" />
 
                     <Button
                         android:id="@+id/seat44"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="8dp"
                         android:background="@color/colorPrimary"
                         android:text="44"
                         android:textColor="@android:color/white"
-                        app:layout_constraintBottom_toTopOf="@+id/button4"
-                        app:layout_constraintEnd_toStartOf="@+id/seat45"
-                        app:layout_constraintTop_toBottomOf="@+id/seat39"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seat40" />
 
                     <Button
                         android:id="@+id/seat45"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginEnd="35dp"
-                        android:layout_marginRight="35dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="8dp"
                         android:background="@color/colorPrimary"
                         android:text="45"
                         android:textColor="@android:color/white"
-                        app:layout_constraintBottom_toTopOf="@+id/button4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seat41" />
+
+                    <Button
+                        android:id="@+id/seat46"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorPrimary"
+                        android:text="46"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/seat45"
+                        app:layout_constraintTop_toBottomOf="@+id/seat42" />
+
+                    <Button
+                        android:id="@+id/seat47"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/colorPrimary"
+                        android:text="47"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/seat49"
+                        app:layout_constraintStart_toEndOf="@+id/seat46" />
+
+                    <Button
+                        android:id="@+id/seat48"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorPrimary"
+                        android:text="48"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/seat40"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintTop_toBottomOf="@+id/seat44" />
+
+                    <Button
+                        android:id="@+id/seat49"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorPrimary"
+                        android:text="49"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/seat48"
+                        app:layout_constraintTop_toBottomOf="@+id/seat43" />
 
                     <Button
                         android:id="@+id/mainDoor2"
@@ -688,25 +736,6 @@
                         android:textColor="@android:color/white"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/seat19" />
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="251dp"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@color/colorPrimary"
-                        android:onClick="buProceed"
-                        android:text="Proceed"
-                        android:textColor="@android:color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.v4.widget.NestedScrollView>
