@@ -36,4 +36,13 @@
         <item>Kasala</item>
         <item>Atbra</item>
     </string-array>
+
+    <string name="time">Select Time</string>
+
+    <string-array name="dep_time">
+        <item>04:00</item>
+        <item>05:30</item>
+        <item>07:00</item>
+        <item>12:00</item>
+    </string-array>
 </resources>

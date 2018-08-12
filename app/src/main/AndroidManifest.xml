@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".busSeats45" />
         <activity android:name=".confirmation" />
-        <activity android:name=".paymentMethod"></activity>
+        <activity android:name=".paymentMethod" />
+        <activity android:name=".bus_seat49" />
     </application>
 
 </manifest>
